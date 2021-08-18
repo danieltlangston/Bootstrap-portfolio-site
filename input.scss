@@ -1,0 +1,44 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+$font-stack: Times, serif;
+$primary-color: rgb(241, 223, 223);
+$secondary-color: #333;
+$hov-color: rgb(130, 130, 253);
+
+body{ 
+    background-color: $primary-color;
+    text-decoration:  none;
+    
+}
+
+a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+        color:$hov-color;
+        transition: ease-in-out .25s;
+    }
+}
+
+nav{ 
+    background-color: $secondary-color;
+    width: 100%;
+}
+.row{
+    background: linear-gradient(#333, #555);
+    margin: 1rem;
+    
+}
+
+.center{
+    @include flexCenter();
+}
