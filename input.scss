@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 body{ 
     background-color: $background-color;
     text-decoration:  none;
+    overflow-x: hidden;
     
 }
 
@@ -84,11 +85,16 @@ nav{
 }
 .headline{
     position:fixed;
-    font-size: 10rem;
+    font-size: 5vw;
     text-align: center;
-    color:white;
     width:100%;
-    top: 10vh;
+    top: 30vh;
+    opacity: 100%;
+}
+.headline-logo{
+    background-color: $third-color;
+    padding: 1rem;
+    border-radius: 100%;
 }
 
 .three-container{
@@ -103,5 +109,5 @@ nav{
 
 .toggler-hamburger-color{
     background-image: url(
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(139, 157, 172)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpathstroke='rgb(139, 157, 172)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
