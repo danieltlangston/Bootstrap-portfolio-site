@@ -11118,6 +11118,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, a, p, span {
   color: #8b9dac;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff2e5;
   text-decoration: none;
@@ -11126,7 +11130,6 @@ body {
 
 a {
   color: #8b9dac;
-  padding: 1rem;
   text-decoration: none;
 }
 a:hover {
@@ -11138,6 +11141,11 @@ a:hover {
 
 nav {
   background-color: #c6e0f6;
+}
+
+hr {
+  width: 120%;
+  transform: translateX(-10%);
 }
 
 .row {
@@ -11205,6 +11213,11 @@ nav {
 
 .toggler-hamburger-color {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpathstroke='rgb(139, 157, 172)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.primarycolor {
+  background-color: #c6e0f6;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
