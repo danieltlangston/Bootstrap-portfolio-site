@@ -11115,7 +11115,7 @@ textarea.form-control-lg {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, a, p, span {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #8b9dac;
+  color: #305c80;
 }
 
 html {
@@ -11129,18 +11129,18 @@ body {
 }
 
 a {
-  color: #8b9dac;
+  color: #305c80;
   text-decoration: none;
 }
 a:hover {
   color: #8282fd;
-  background-color: #f6dbc6;
+  background-color: #f8d187;
   border-radius: 100%;
   transition: ease-in-out 0.25s;
 }
 
 nav {
-  background-color: #c6e0f6;
+  background-color: #f8d187;
 }
 
 hr {
@@ -11196,7 +11196,7 @@ hr {
 }
 
 .headline-logo {
-  background-color: #f6dbc6;
+  background-color: #f8d187;
   padding: 1rem;
   border-radius: 100%;
 }
@@ -11216,8 +11216,12 @@ hr {
 }
 
 .primarycolor {
-  background-color: #c6e0f6;
+  background-color: #f8d187;
   padding: 1rem;
+}
+
+.films {
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.css.map */
