@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-portfolio-site",
+  "version": "1.0.0",
+  "main": "gallery.js",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0",
+    "three": "^0.131.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieltlangston/Bootstrap-portfolio-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieltlangston/Bootstrap-portfolio-site/issues"
+  },
+  "homepage": "https://github.com/danieltlangston/Bootstrap-portfolio-site#readme",
+  "description": ""
+}
