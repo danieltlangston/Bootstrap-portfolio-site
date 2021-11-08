@@ -11,17 +11,19 @@
      
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://use.typekit.net/uvv6grm.css">
 
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src='carouselSettings.js'></script>
         
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="artgrid.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;500;900&display=swap" rel="stylesheet">
@@ -31,107 +33,63 @@
         <title>Daniel Langston - Graphic Artist</title>
     </head>
     <body>
-    <div class="container-fluid">
+        <div class="">
 
-        <nav class="navbar navbar-expand-lg sticky-top" style="padding: 0 1rem 0 1rem;">
-
-                <a class="navbar-brand" href="#top"><img class="navbar-text" style="width:50px;" src="art/DL-logo.png"></a>
-                
-                <button class="navbar-toggler toggler-stroke-color ml-auto" type="button" data-toggle="collapse" data-target="#myNav">
-                    <span class="navbar-toggler-icon toggler-hamburger-color"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="myNav">
-                    <div class="navbar-nav">   
-                        <div class="col-12 nav-item text-center"><a class="nav-text" href="#design">Design</a></div>
-                        <div class="col-12 nav-item text-center"><a class="nav-text" href="#art">Art</a></div>
-                        <div class="col-12 nav-item text-center"><a class="nav-text" href="#film">Films</a></div>
-                        <div class="col-12 nav-item text-center"><a class="nav-text" href="#about">About</a></div>
-                        <div class="col-12 nav-item text-center"><a class="nav-text" href="#footercontact">Contact</a></div>
-                    </div>
+            <nav class="navbar sticky-top">
+                <div class='col-md-10 col-sm-2'>
+                    <a class="navbar-brand" href="#top"><img class="navbar-text" style="width:50px;" src="art/DL-logo-white.png"></a>   
                 </div>
-        </nav>
+                <div class="col-md-1 col-sm-4">
+                    <a class="nav-text p-4" href="#about">About</a>
+                </div>
+                <div class="col-md-1 col-sm-4">
+                    <a class="nav-text p-4" href="#footercontact">Contact</a>
+                </div>  
+            </nav>
 
-        <!--
-        <div class="parallax" id="top">
-            <div class="mask">
-                <span class="headline"><img src="art/DL-logo.png" class="headline-logo"></span>
-                    <div class="three-container">
-                      <script src="/node_modules/three/build/three.js"></script>
-                        <script src="/threeForIndex.js"></script>
-                    </div>
-                
+            <div class="row">
+                <p>Fine Art & Prints</p>
+                <div class="col-12 gallery js-flickity"   data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false}'>
+                    <img class="gallery-cell" src="/art/fineart/thesis/large prints-02.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/large prints-01.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/large prints2-01 copy.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/Untitled-3-01.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/Untitled-3-02.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/Untitled-3-03.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/Untitled-3-04.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/Untitled-3-05.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/Untitled-3-06.png">
+                    <img class="gallery-cell" src="/art/fineart/thesis/Untitled-3-07.png">
+                    <img class="gallery-cell" src="/art/fineart/etching/etchings-03.png">
+                    <img class="gallery-cell" src="/art/fineart/etching/etchings-02.png">
+                    <img class="gallery-cell" src="/art/fineart/experiment/experiment optical illustion-01.png">
+                    <img class="gallery-cell" src="/art/fineart/experiment/experiments-01.png">
+                    <img class="gallery-cell" src="/art/fineart/experiment/experiments-02.png">
+                </div>
+            </div>
+            <div class="row">
+                <p>Lofied</p>
+                <div class="col-12 gallery js-flickity"   data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false}'>
+                    <img class="gallery-cell" src="/art/lofie/2d2d-07.png">
+                    <img class="gallery-cell" src="/art/lofie/2d2d-08.png">
+                    <img class="gallery-cell" src="/art/lofie/2d2d-09.png">
+                    <img class="gallery-cell" src="/art/lofie/2d2d-10.png">
+                    <img class="gallery-cell" src="/art/lofie/headshake-white.gif">
+                    <img class="gallery-cell" src="/art/lofie/lofied-bebop_1.gif">
+                    <img class="gallery-cell" src="/art/lofie/Lofied-text-_1.gif">
+                </div>
+            </div>
+            <div class="row">
+                <p>Motion Graphics</p>
+                <div class="col-12 gallery js-flickity"   data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false}'>
+                    <img class="gallery-cell" src="/art/gifs/achead-v2.gif">
+                    <img class="gallery-cell" src="/art/gifs/aogaeru-retro-gif.gif">
+                    <img class="gallery-cell" src="/art/gifs/JD-3s-for-gif-cropped.gif">
+                    <img class="gallery-cell" src="/art/gifs/mushroomcropped.gif">          
+                </div>
             </div>
         </div>
-        -->
-           
 
-
-            <div class="row">
-                <div  id="design"><h1>Design</h1>
-                    <div class="artgridcontainer">
-                        <div class="artgrid">
-                            <div><img class="galleryimage" src="art/lofie/headshake_2.gif" id=""></div>
-                            <div><img class="galleryimage" src="art/gifs/mushroomcropped.gif"></div>
-                            <div><img class="galleryimage" src="art/gifs/JD-3s-for-gif-cropped.gif"></div>
-                            <div><img class="galleryimage" src="art/gifs/aogaeru-retro-gif.gif"></div>
-                            <div><img class="galleryimage" src="art/redesigns/downtown redesign-09.png"></div>
-                            <div><img class="galleryimage" src="art/redesigns/downtown redesign-10.png"></div>
-                            <div><img class="galleryimage" src="art/redesigns/rons redesign-11.png"></div>
-                            <div><img class="galleryimage" src="art/redesigns/rons redesign-12.png"></div>
-                            <div><img class="galleryimage" src="art/redesigns/rons redesign-13.png"></div>
-                            <div><img class="galleryimage" src="art/redesigns/rons redesign-14.png"></div>
-                            <div><img class="galleryimage" src="art/redesigns/vincents redesign-08.png"></div>
-                            <div><img class="galleryimage" src="art/redesigns/vincents redesign-09.png"></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="art"><h1> Art</h1>
-                    <div class="artgridcontainer">
-                        <div class="artgrid">
-                                <div><img class="galleryimage" src="art/fineart/etching/etchings-02.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/etching/etchings-03.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/experiment/experiment optical illustion-01.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/experiment/experiments-01.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/experiment/experiments-02.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/large prints-01.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/large prints-02.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/large prints2-01.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/large prints2-02.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/Untitled-3-02.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/Untitled-3-03.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/Untitled-3-04.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/Untitled-3-05.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/Untitled-3-06.png"></div>
-                                <div><img class="galleryimage" src="art/fineart/thesis/Untitled-3-07.png"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="film"><h1> Film</h1>
-                    <div class="artgridcontainer">
-                        <div class="artgrid films">
-                            <div><iframe src="https://www.youtube.com/embed/uE2Ks7jm4VM" allowfullscreen></iframe></div>
-                            <div><iframe src="https://www.youtube.com/embed/eqE2diJPT8Y" allowfullscreen></iframe></div>
-                            <div><iframe src="https://www.youtube.com/embed/FWVZSdIrQS0" allowfullscreen></iframe></div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-   <!-- <footer class="container footercontainer" id="#footercontainer">
-            <div class="row">
-                <h3 class="col-12 text-center">lets get to work.</h3>
-                <input class="col-6 col-sm-4" type="text" id="fname" name="firstname" placeholder="First name">
-                <input class="col-6 col-sm-4" type="text" id="lname" name="lastname" placeholder="Last name">
-                <input class="col-12 col-sm-4" type="text" id="clientemail" name="clientemail" placeholder="E-mail">
-                <textarea id="whatsup" name="whatsup" placeholder="What's up? (max char 500)" maxlength="500"></textarea>
-                <br><button onclick="location.href='mailto:dan.t.langston@gmail.com';" id="send">send mail</button>
-            </div>
-
-    </footer>-->
-    </div>
     <footer>
         <div class="primarycolor">
             <div class="row primarycolor " id="about">
@@ -151,7 +109,7 @@
         </div>
     </footer>
 
-    <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>

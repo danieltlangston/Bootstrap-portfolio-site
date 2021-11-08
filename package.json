@@ -4,6 +4,7 @@
   "main": "gallery.js",
   "dependencies": {
     "bootstrap": "^5.1.1",
+    "flickity": "^2.2.2",
     "jquery": "^3.6.0",
     "three": "^0.131.3"
   },

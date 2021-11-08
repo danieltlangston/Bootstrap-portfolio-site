@@ -10,15 +10,15 @@
 }
 
 $font-stack: Times, serif;
-$primary-color: #f8d187;
-$secondary-color: #305c80;
-$third-color: #f8d187;
-$background-color:#fff2e5;
+$primary-color:#272727;
+$secondary-color: #dabc13;
+$third-color: rgb(220, 132, 255);
+$background-color:#3a3a3a;
 $hov-color: rgb(130, 130, 253);
 
 h1, h2, h3, h4, h5, h6, a, p, span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+  font-family: termina, sans-serif;
+  font-weight: 600;
     color: $secondary-color;
 }
 
@@ -38,14 +38,14 @@ a{
     text-decoration: none;
     &:hover{
         color:$hov-color;
-        background-color: $third-color;
-        border-radius: 100%;
         transition: ease-in-out .25s;
     }
 }
 
 nav{ 
     background-color: $primary-color;
+    width: 100vw;
+    padding: 1rem;
 }
 
 hr{
@@ -68,27 +68,7 @@ hr{
 
 }
 
-.row > img{
-    padding: 3rem;
-}
 
-
-.parallax{
-    width: 100%;
-    height: 150vh;
-    background: url(art/svgmask/image.png);
-    background-size: cover;
-    position: relative;
-}
-.mask{
-    mask:url(art/svgmask/cutout.png);
-    mask-size: cover;
-    -webkit-mask:url(art/svgmask/cutout.png);
-    -webkit-mask-size: cover;
-    width:100%;
-    height: 100%;
-
-}
 .headline{
     position:fixed;
     font-size: 5vw;
@@ -103,11 +83,6 @@ hr{
     border-radius: 100%;
 }
 
-.three-container{
-    height: 400px;
-    width: 300px;
-    position: fixed;
-}
 
 .toggler-stroke-color{
     border-color: none;
@@ -126,3 +101,58 @@ hr{
 .films{
     justify-content: center;
 }
+
+
+
+
+///////
+
+
+  
+  .gallery {
+    background: transparent;
+    height: 40vw;
+    border-radius: 10px;
+  }
+  
+  .gallery-cell {
+    padding:2%;
+    height: 30vw;
+    margin: 0;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+
+  }
+  
+
+  .gallery-cell:hover {
+    display: block;
+    transform: scale(110%);
+    transition: .5s;
+  }
+  /* big buttons, no circle */
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: white;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: white;
+  }
+  .flickity-prev-next-button:hover {
+    background: transparent;
+  }
+  /* hide disabled button */
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
+  .flickity-page-dots:disabled {
+    display: none;
+  }
