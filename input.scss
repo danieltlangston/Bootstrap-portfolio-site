@@ -103,6 +103,18 @@ hr{
 }
 
 
+.icons{
+    color: $secondary-color;
+    margin: auto;
+    i{
+      margin: 3rem;
+    }
+  :hover{
+    color: $hov-color;
+    cursor: pointer;
+  }
+  }
+
 
 
 ///////

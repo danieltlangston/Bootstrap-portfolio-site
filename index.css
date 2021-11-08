@@ -11198,6 +11198,18 @@ hr {
   justify-content: center;
 }
 
+.icons {
+  color: #dabc13;
+  margin: auto;
+}
+.icons i {
+  margin: 3rem;
+}
+.icons :hover {
+  color: #8282fd;
+  cursor: pointer;
+}
+
 .gallery {
   background: transparent;
   height: 40vw;
