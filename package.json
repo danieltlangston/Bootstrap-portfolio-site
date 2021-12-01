@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "gallery.js",
   "dependencies": {
+    "@ecodev/natural-gallery-js": "^8.0.1",
     "bootstrap": "^5.1.1",
     "flickity": "^2.2.2",
     "font-awesome": "^4.7.0",
