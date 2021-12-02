@@ -97,26 +97,25 @@ hr{
   .gallery {
     background: transparent;
     border-radius: 10px;
-
-    align-items: baseline;
+    vertical-align: baseline;
   }
   
   .gallery-cell {
     padding:2%;
     height: 30vw;
-    justify-content: center;
+
   }
-  .description {
-    
+  .flickity-slider {
+    display: flex;
+    align-items: center;
   }
-  
 
 
 @media only screen and (max-width: 981px){
-
   .gallery-cell {
     height: auto;
     width: 100%;
+
 
   }
   .description {
