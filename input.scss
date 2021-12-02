@@ -97,6 +97,7 @@ hr{
   .gallery {
     background: transparent;
     border-radius: 10px;
+
     align-items: baseline;
   }
   
@@ -112,8 +113,8 @@ hr{
 
 
 @media only screen and (max-width: 981px){
-  .gallery-cell {
 
+  .gallery-cell {
     height: auto;
     width: 100%;
 
