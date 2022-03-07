@@ -19,7 +19,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;500;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700;1,800&display=swap" rel="stylesheet">  
-      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="Js/cursor.js" ></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61702682-1"></script>
         <script>
@@ -31,7 +32,9 @@
 
         <title>Daniel Langston - Graphic Artist</title>
     </head>
-    <body>
+    <body>    
+        <div id="circularcursor"></div>
+
         <div class="">
             <nav class="navbar sticky-top">
                 <div class='col-1'>
@@ -44,7 +47,6 @@
                     <a href='#contact'><i class=" fa-solid fa-envelope fa-2x p-2"></i></a>
                 </div>  
             </nav>
-
             <div class="row">
                 <div class="col sm-12 col-md-8 py-5">
                     <div class="col-12">
@@ -52,9 +54,7 @@
                     </div>
                 </div>
             </div>
-
             <hr>
-
             <div class="row" style="margin-top:3rem">
                 <h4>Vocabulize</h4>
                 <div class="col-md-8 col-12 gallery" data-flickity='{ "cellAlign": "center", "contain": true, "imagesLoaded": true  }'>
@@ -90,7 +90,6 @@
                 </div>
             </div>
             <hr>
-
             <div class="row">
                 <h4>Denial Print Co</h4>
                 <div class="col-md-8 col-12" data-flickity='{ "cellAlign": "center", "contain": true, "imagesLoaded": true  }'>
@@ -104,14 +103,12 @@
                     <img class="gallery-cell" src="art/denial/sticker1.png">   
                     <img class="gallery-cell" src="art/denial/sticker2.png">   
                     <img class="gallery-cell" src="art/denial/sticker3.png">    
-
                 </div>
                 <div class="col-md-4 col-12 description">
                     <p>Denial Print Co is a high quality garment manufacturing facility in Delaware County, Pennsylvania. This is a collection of marketing and promotional assets for the facility. </p>
                 </div>
             </div>
             <hr>
-
             <div class="row">
                 <h4>Garments</h4>
                 <div class="col-md-8 col-12" data-flickity='{ "cellAlign": "center", "contain": true, "imagesLoaded": true  }'>
@@ -126,7 +123,6 @@
                 </div>
             </div>
             <hr>
-
             <div class="row" >
                 <h4>Fine Art & Prints</h4><p></p>
                 <div class="col-md-8 col-12" data-flickity='{ "cellAlign": "center", "contain": true, "imagesLoaded": true  }'>
@@ -150,7 +146,6 @@
                 </div>
             </div>
             <hr>
-
             <div class="row">
                 <h4>Animations</h4>
                 <div class="col-md-8 col-12" data-flickity='{ "cellAlign": "center", "contain": true, "imagesLoaded": true  }'>
@@ -165,20 +160,19 @@
             </div>        
         </div>
 
-    <footer class="primarycolor">
-            <hr>
-            <div class="row primarycolor" id="footercontact">
-                <div id="contact">
-                    <h1>Contact</h1><a class="" href="mailto:dan.t.langston@gmail.com">dan.t.langston@gmail.com</a>
+        <footer class="primarycolor">
+                <div class="row primarycolor" id="footercontact">
+                    <div id="contact">
+                        <h1>Contact</h1><a class="" href="mailto:dan.t.langston@gmail.com">dan.t.langston@gmail.com</a>
+                    </div>
+                    <div class="py-1">
+                        <a class="" target="_blank" href="art/Langston_Resume_Design_2022_2.pdf">Download Resume</a>
+                    </div>
                 </div>
-                <div class="py-1">
-                    <a class="" target="_blank" href="art/Langston_Resume_Design_2022_2.pdf">Download Resume</a>
-                </div>
-            </div>
-    </footer>
+        </footer>
 
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>

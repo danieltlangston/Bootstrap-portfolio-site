@@ -12,6 +12,7 @@ h4 {
 
 html {
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
@@ -27,12 +28,22 @@ a {
 a:hover {
   color: #8282fd;
   transition: ease-in-out 0.25s;
+  cursor: none;
+}
+
+button {
+  cursor: none;
 }
 
 nav {
-  background-color: #ececec;
+  background-color: #f3eded;
   width: 100vw;
   padding: 1rem;
+  z-index: 1;
+  filter: drop-shadow(5px 0px 20px #f3eded);
+}
+nav:hover {
+  z-index: 1;
 }
 
 hr {
@@ -60,7 +71,7 @@ hr {
 }
 
 .primarycolor {
-  background-color: #ececec;
+  background-color: #f3eded;
   padding: 1rem;
 }
 
@@ -77,9 +88,9 @@ hr {
 .icons i {
   margin: 3rem;
 }
-.icons :hover {
+.icons:hover {
   color: #8282fd;
-  cursor: pointer;
+  cursor: none;
 }
 
 .gallery {
@@ -91,11 +102,50 @@ hr {
 .gallery-cell {
   padding: 2%;
   height: 30vw;
+  cursor: none;
 }
 
 .flickity-slider {
   display: flex;
   align-items: center;
+  cursor: none;
+}
+
+.flickity-button {
+  background: transparent;
+  cursor: none;
+}
+.flickity-button :hover {
+  cursor: none;
+  background-color: transparent;
+  color: #8282fd;
+}
+.flickity-button :disabled {
+  display: none;
+}
+
+.flickity-prev-next-button {
+  background-color: none;
+}
+.flickity-prev-next-button:hover {
+  background-color: transparent;
+  cursor: none;
+}
+
+html {
+  cursor: none;
+}
+
+#circularcursor {
+  background-color: #f34352;
+  mix-blend-mode: exclusion;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 981px) {
