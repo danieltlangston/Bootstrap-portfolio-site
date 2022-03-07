@@ -8,16 +8,22 @@
 }
 
 $font-stack: Times, serif;
-$primary-color:#272727;
-$secondary-color: #dabc13;
-$third-color: rgb(220, 132, 255);
-$background-color:#3a3a3a;
+$primary-color:#ececec ;
+$secondary-color: #616161;
+$third-color: rgb(243, 67, 82);
+$background-color:#d6d9e0;
 $hov-color: rgb(130, 130, 253);
+$link-color:  rgb(243, 67, 82);
 
-h1, h2, h3, h4, h5, h6, a, p, span {
+h1, h2, h3, h5, h6, a, p, span {
   font-family: termina, sans-serif;
   font-weight: 600;
     color: $secondary-color;
+}
+h4{
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  color: $third-color;
 }
 
 html {
@@ -32,7 +38,7 @@ body{
 }
 
 a{
-    color: $secondary-color;
+    color: $link-color;
     text-decoration: none;
     &:hover{
         color:$hov-color;
@@ -52,7 +58,7 @@ hr{
 }
 .row{
     background: $background-color;
-    margin: 3rem;
+    margin: 10rem;
     display: flex;
     align-items:center;
     
@@ -115,8 +121,9 @@ hr{
   .gallery-cell {
     height: auto;
     width: 100%;
-
-
+  }
+  .row{
+    margin: 3rem;
   }
   .description {
     margin-top: 4rem;
