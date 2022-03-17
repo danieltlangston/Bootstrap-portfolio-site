@@ -139,8 +139,8 @@ html {
 #circularcursor {
   background-color: #f34352;
   mix-blend-mode: exclusion;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
