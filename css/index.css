@@ -1,0 +1,179 @@
+h1, h2, h3, h5, h6, a, p, span {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  color: #616161;
+}
+
+h4 {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  color: #f34352;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+body {
+  background-color: #d6d9e0;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+a {
+  color: #f34352;
+  text-decoration: none;
+}
+a:hover {
+  color: #8282fd;
+  transition: ease-in-out 0.25s;
+  cursor: none;
+}
+
+button {
+  cursor: none;
+}
+
+nav {
+  background-color: #f3eded;
+  width: 100vw;
+  padding: 1rem;
+  z-index: 1;
+  filter: drop-shadow(5px 0px 20px #f3eded);
+}
+nav:hover {
+  z-index: 1;
+}
+
+hr {
+  width: 120%;
+  transform: translateX(-10%);
+}
+
+.row {
+  background: #d6d9e0;
+  margin: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 10rem;
+  opacity: 100%;
+}
+
+.primarycolor {
+  background-color: #f3eded;
+  padding: 1rem;
+}
+
+.films {
+  justify-content: center;
+}
+
+.icons {
+  color: #616161;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+.icons i {
+  margin: 3rem;
+}
+.icons:hover {
+  color: #8282fd;
+  cursor: none;
+}
+
+.gallery {
+  background: transparent;
+  border-radius: 10px;
+  vertical-align: baseline;
+}
+
+.gallery-cell {
+  padding: 2%;
+  height: 30vw;
+  cursor: none;
+}
+
+.flickity-slider {
+  display: flex;
+  align-items: center;
+  cursor: none;
+}
+
+.flickity-button {
+  background: transparent;
+  cursor: none;
+}
+.flickity-button :hover {
+  cursor: none;
+  background-color: transparent;
+  color: #8282fd;
+}
+.flickity-button :disabled {
+  display: none;
+}
+
+.flickity-prev-next-button {
+  background-color: none;
+}
+.flickity-prev-next-button:hover {
+  background-color: transparent;
+  cursor: none;
+}
+
+/* HIDE SCROLLBAR */
+.hidescroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hidescroll {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* CURSOR */
+html {
+  cursor: none;
+}
+
+#circularcursor {
+  background-color: #f34352;
+  mix-blend-mode: exclusion;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 981px) {
+  .gallery-cell {
+    height: auto;
+    width: 100%;
+  }
+
+  .row {
+    margin: 3rem;
+  }
+
+  .description {
+    margin-top: 4rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
