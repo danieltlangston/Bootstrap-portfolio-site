@@ -1,0 +1,22 @@
+.grid{
+    transform: translateY(25px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.design-grid{
+    transform: translateY(25px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 900px){
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .design-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+  }
