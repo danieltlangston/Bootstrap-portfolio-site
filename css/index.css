@@ -53,7 +53,7 @@ hr {
 
 .row {
   background: #d6d9e0;
-  margin: 10rem;
+  margin: 5rem;
   display: flex;
   align-items: center;
 }
@@ -161,7 +161,7 @@ html {
   z-index: 100;
 }
 
-@media only screen and (max-width: 981px) {
+@media only screen and (max-width: 900px) {
   .gallery-cell {
     height: auto;
     width: 100%;
