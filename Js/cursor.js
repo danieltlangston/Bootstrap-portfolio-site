@@ -9,11 +9,3 @@ $(document).ready(function() {
     })
   });
 
-
-$(document).ready(function() {
-  $(document).on('mouseover', function(e) {
-    $('#circularcursor').css({
-      innerWidth: '30px'
-    });
-  })
-});
