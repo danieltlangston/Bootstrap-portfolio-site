@@ -95,9 +95,6 @@ hr{
     justify-content: center;
 }
 
-
-
-
 .icons{
     color: $secondary-color;
     text-align: center;
@@ -165,7 +162,7 @@ html {
   cursor: none;
 }
 
-#circularcursor {
+#circularcursor { 
   background-color: $third-color;
   mix-blend-mode:exclusion ;
   height:10px;
