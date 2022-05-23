@@ -2,6 +2,7 @@ h1, h2, h3, h5, h6, a, p, span {
   font-family: termina, sans-serif;
   font-weight: 600;
   color: #616161;
+  line-height: 2rem;
 }
 
 h4 {
