@@ -8,22 +8,22 @@
 }
 
 $font-stack: Times, serif;
-$primary-color:rgb(243, 237, 237) ;
-$secondary-color: #616161;
-$third-color: rgb(243, 67, 82);
-$background-color:#d6d9e0;
+$primary-color:rgb(29, 29, 29) ;
+$secondary-color: #c4c3c3;
+$third-color: #d74444;
+$background-color:rgb(29, 29, 29) ;
 $hov-color: rgb(130, 130, 253);
-$link-color:  rgb(243, 67, 82);
+$link-color:  rgb(255, 234, 218);
 
 h1, h2, h3, h5, h6, a, p, span {
-  font-family: termina, sans-serif;
-  font-weight: 600;
+  font-family:  arponasans, sans-serif; ;
+  font-weight: 400;
   color: $secondary-color;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 h4{
-  font-family: termina, sans-serif;
-  font-weight: 600;
+  font-family:  arponasans, sans-serif; 
+  font-weight: 400;
   color: $third-color;
 }
 
@@ -89,7 +89,6 @@ hr{
 
 .primarycolor{
     background-color: $primary-color;
-    padding: 1rem;
 }
 
 .films{
@@ -147,7 +146,10 @@ hr{
       cursor: none;
     }
   }
-  
+
+/* FOOTER */
+
+
 /* HIDE SCROLLBAR */
 .hidescroll::-webkit-scrollbar {
   display: none;
