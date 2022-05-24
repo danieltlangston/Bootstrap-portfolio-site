@@ -48,24 +48,32 @@
 
         <div>
             <nav class="navbar sticky-top">
-                <div class='col-2 text-center p-2'>
-                    <a class="mx-auto navbar-brand" href="index.html">
+                <div class='text-center p-3'>
+                    <a class="mx-auto" href="index.html">
                         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.66 34.72" style="height: 35px;">
                             <path d="M17.61,32.72c6.32,0,11.61-4.98,13.05-11.69" style="fill: none; stroke: #7987a8; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 4px;"/>
                             <path d="M30.66,13.69c-1.44-6.71-6.73-11.69-13.05-11.69" style="fill: none; stroke: #7987a8; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 4px;"/>
                             <path d="M2,21.03v7.03c0,2.57,2.09,4.66,4.66,4.66h3.69" style="fill: none; stroke: #7987a8; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 4px;"/>
                             <path d="M10.35,2h-3.69c-2.57,0-4.66,2.09-4.66,4.66v7.03" style="fill: none; stroke: #7987a8; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 4px;"/>
                             <path d="M9.89,11.73v13.13c0,.14,.11,.25,.25,.25h9.42" style="fill: none; stroke: #7987a8; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 4px;"/>
-                          </svg>
-                    </a>
-                       
+                        </svg>
+                    </a>  
                 </div>
-                <div class="col-4 py-2 text-center">
-                    <a class="p-3" href="design.html">Design</a>
-                    <a class="p-3" href="art.html">Art</a>
-                    <a class="p-3" href="about.html">About</a>
-                    <a class="p-3" href="#contact">Contact</a>
-                </div>
+    
+                <div class="dropdown">
+                    <div style="scale:50%; transform: translateY(-110%) translateX(-100%);" class="dropdown">
+                        <div class="menu btn14" data-menu="14">
+                            <div class="icon-circle"></div>
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 dropdown-content">
+                        <a class="p-3" href="design.html">Design</a>
+                        <a class="p-3" href="art.html">Art</a>
+                        <a class="p-3" href="about.html">About</a>
+                        <a class="p-3" href="#contact">Contact</a>
+                    </div>
+                  </div>
             </nav>
 
             <div class="project">
@@ -107,6 +115,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="Js/fadeIn.js" ></script>
     <script src="Js/cursor.js" ></script>
+    <script src="Js/dropdown.js" ></script>
 
 </html>
 

@@ -147,7 +147,6 @@ hr{
     }
   }
 
-/* FOOTER */
 
 
 /* HIDE SCROLLBAR */
@@ -193,3 +192,136 @@ html {
   }
 }
 
+/*CUSTOM NAV TOGGLE */
+
+$dark: $third-color;
+$light: $secondary-color;
+$color: #b3e5fc;
+
+@mixin btn() {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition-duration: 0.5s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position:relative;
+  height: $height;
+  width: $width;
+  top: 30px;
+  background-color: $light;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $light;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $light;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-circle($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 2px;
+  border-radius: 100%;
+  background: transparent;
+  border: 4px solid $light;
+  left: -15px;
+}
+
+.btn14{
+  @include btn();
+
+  .icon-circle {
+    @include icon-circle(60px, 60px);
+    &:hover {
+      background: none;
+    }
+  }
+  
+  .icon {
+    @include icon(2px, 30px);
+    border-radius: 2px;
+    
+    &:before{
+      @include icon-before(2px, 30px, -10px);
+      border-radius: 2px;
+    }
+    
+    &:after{
+      @include icon-after(2px, 30px, 10px);
+      border-radius: 2px;
+    }
+  }
+  
+  &.open {
+    .icon-circle {
+      background: none;
+    }
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+      
+      &:before{
+        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+      }
+
+      &:after{
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+      }
+    }
+  }
+  &:hover {
+    cursor: none;
+  }
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: right;
+  right: 0;
+  background-color: none;
+  min-width: 160px;
+  line-height: .5rem;
+  z-index: 1;
+  background-color: $background-color;
+  transition: ease-in-out .5s;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  transition: ease-in-out .5s;
+}
+
+.dropdown-content-display {
+  display: block;
+  z-index: 1;
+  transition: ease-in-out .5s;
+}
