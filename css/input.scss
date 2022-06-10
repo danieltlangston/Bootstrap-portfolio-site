@@ -8,10 +8,10 @@
 }
 
 $font-stack: Times, serif;
-$primary-color:rgb(29, 29, 29) ;
+$primary-color:rgb(39, 39, 39);
 $secondary-color: #c4c3c3;
-$third-color: #d74444;
-$background-color:rgb(29, 29, 29) ;
+$third-color: #d17777;
+$background-color:rgb(39, 39, 39) ;
 $hov-color: rgb(130, 130, 253);
 $link-color:  rgb(255, 234, 218);
 
@@ -19,12 +19,15 @@ h1, h2, h3, h5, h6, a, p, span {
   font-family:  arponasans, sans-serif; ;
   font-weight: 400;
   color: $secondary-color;
-  line-height: 1.5rem;
+
 }
 h4{
   font-family:  arponasans, sans-serif; 
   font-weight: 400;
   color: $third-color;
+}
+p{
+  font-size: 2rem;
 }
 
 html {
@@ -69,12 +72,21 @@ hr{
     width: 120%;
     transform: translateX(-10%);
 }
+
+footer{
+  background-color: $background-color;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .row{
-    background: $background-color;
-    margin: 5rem;
+    margin: 5rem 5rem 5rem 5rem;
     display: flex;
     align-items:center;
     
+}
+.background{
+  background-color: $background-color;
 }
 
 .center{
@@ -300,28 +312,52 @@ $color: #b3e5fc;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  padding: 15px;
   display: none;
   position: absolute;
   text-align: right;
   right: 0;
   background-color: none;
-  min-width: 160px;
   line-height: .5rem;
   z-index: 1;
-  background-color: $background-color;
   transition: ease-in-out .5s;
-
+  word-wrap: none;
+  transform: translate( -10%, -33%);
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   text-decoration: none;
-  display: block;
+  display: flex;
   transition: ease-in-out .5s;
 }
 
 .dropdown-content-display {
-  display: block;
+  display:inline-flex;
   z-index: 1;
   transition: ease-in-out .5s;
+}
+
+/* Parallax video */
+.parallax{
+  background-size:cover;
+  min-width:100vw;
+  position:fixed;
+  width:auto;
+  z-index:-1;
+}
+
+
+
+@media only screen and (max-width: 900px){
+  .dropdown-content-display {
+    display:block;
+    z-index: 1;
+    transition: ease-in-out .5s;
+  }
+  .dropdown-content {
+    transform: translate( -20%, 1%);
+    background-color: $background-color;
+    border-radius: 5%;
+  }
 }

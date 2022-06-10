@@ -2,13 +2,16 @@ h1, h2, h3, h5, h6, a, p, span {
   font-family: arponasans, sans-serif;
   font-weight: 400;
   color: #c4c3c3;
-  line-height: 1.5rem;
 }
 
 h4 {
   font-family: arponasans, sans-serif;
   font-weight: 400;
-  color: #d74444;
+  color: #d17777;
+}
+
+p {
+  font-size: 2rem;
 }
 
 html {
@@ -17,7 +20,7 @@ html {
 }
 
 body {
-  background-color: #1d1d1d;
+  background-color: #272727;
   text-decoration: none;
   overflow-x: hidden;
 }
@@ -37,11 +40,11 @@ button {
 }
 
 nav {
-  background-color: #1d1d1d;
+  background-color: #272727;
   width: 100vw;
   padding: 1rem;
   z-index: 1;
-  filter: drop-shadow(5px 0px 20px #1d1d1d);
+  filter: drop-shadow(5px 0px 20px #272727);
 }
 nav:hover {
   z-index: 1;
@@ -52,11 +55,20 @@ hr {
   transform: translateX(-10%);
 }
 
+footer {
+  background-color: #272727;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .row {
-  background: #1d1d1d;
-  margin: 5rem;
+  margin: 5rem 5rem 5rem 5rem;
   display: flex;
   align-items: center;
+}
+
+.background {
+  background-color: #272727;
 }
 
 .center {
@@ -72,7 +84,7 @@ hr {
 }
 
 .primarycolor {
-  background-color: #1d1d1d;
+  background-color: #272727;
 }
 
 .films {
@@ -150,7 +162,7 @@ html {
 }
 
 #circularcursor {
-  background-color: #d74444;
+  background-color: #d17777;
   mix-blend-mode: exclusion;
   height: 10px;
   width: 10px;
@@ -249,29 +261,53 @@ html {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  padding: 15px;
   display: none;
   position: absolute;
   text-align: right;
   right: 0;
   background-color: none;
-  min-width: 160px;
   line-height: 0.5rem;
   z-index: 1;
-  background-color: #1d1d1d;
   transition: ease-in-out 0.5s;
+  word-wrap: none;
+  transform: translate(-10%, -33%);
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   text-decoration: none;
-  display: block;
+  display: flex;
   transition: ease-in-out 0.5s;
 }
 
 .dropdown-content-display {
-  display: block;
+  display: inline-flex;
   z-index: 1;
   transition: ease-in-out 0.5s;
+}
+
+/* Parallax video */
+.parallax {
+  background-size: cover;
+  min-width: 100vw;
+  position: fixed;
+  width: auto;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 900px) {
+  .dropdown-content-display {
+    display: block;
+    z-index: 1;
+    transition: ease-in-out 0.5s;
+  }
+
+  .dropdown-content {
+    transform: translate(-20%, 1%);
+    background-color: #272727;
+    border-radius: 5%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
