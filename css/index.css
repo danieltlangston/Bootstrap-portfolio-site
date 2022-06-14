@@ -40,11 +40,11 @@ button {
 }
 
 nav {
-  background-color: #272727;
+  background-color: #222222;
   width: 100vw;
   padding: 1rem;
   z-index: 1;
-  filter: drop-shadow(5px 0px 20px #272727);
+  filter: drop-shadow(5px 0px 20px #222222);
 }
 nav:hover {
   z-index: 1;
@@ -84,7 +84,7 @@ footer {
 }
 
 .primarycolor {
-  background-color: #272727;
+  background-color: #222222;
 }
 
 .films {
