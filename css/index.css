@@ -87,6 +87,10 @@ footer {
   background-color: #222222;
 }
 
+.secondarycolor {
+  color: #c4c3c3;
+}
+
 .films {
   justify-content: center;
 }

@@ -1,0 +1,10 @@
+Stuff to do:
+
+Writing:
+        Thesis Project
+        Landing Page
+        burlington parks
+
+Update/Create:
+        Logos to mockups
+        BurlCoParks - fix map gif loop
