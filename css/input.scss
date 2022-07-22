@@ -8,12 +8,12 @@
 }
 
 $font-stack: Times, serif;
-$primary-color:rgb(34, 34, 34);
-$secondary-color: #c4c3c3;
-$third-color: #d17777;
-$background-color:rgb(39, 39, 39) ;
+$primary-color:rgb(229, 229, 229);
+$secondary-color: #767676;
+$third-color:  rgba(192, 123, 123, 0.946);
+$background-color:rgb(220, 215, 215) ;
 $hov-color: rgb(130, 130, 253);
-$link-color:  rgb(255, 234, 218);
+$link-color:  rgba(192, 123, 123, 0.946);
 
 h1, h2, h3, h5, h6, a, p, span {
   font-family:  arponasans, sans-serif; ;
@@ -60,7 +60,7 @@ nav{
     width: 100vw;
     padding: 1rem;
     z-index: 1;
-    filter: drop-shadow(5px 0px 20px $primary-color);
+    /*filter: drop-shadow(5px 0px 20px $primary-color);*/
     
     &:hover{
       z-index: 1;
@@ -71,6 +71,7 @@ nav{
 hr{
     width: 120%;
     transform: translateX(-10%);
+    color: $background-color;
 }
 
 footer{
@@ -84,7 +85,7 @@ footer{
     display: flex;
     align-items:center;
     
-}
+} 
 .background{
   background-color: $background-color;
 }
@@ -109,7 +110,9 @@ footer{
 .films{
     justify-content: center;
 }
-
+.headertext{
+  color: $background-color;
+}
 .icons{
     color: $secondary-color;
     text-align: center;

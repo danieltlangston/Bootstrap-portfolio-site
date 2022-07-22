@@ -1,13 +1,13 @@
 h1, h2, h3, h5, h6, a, p, span {
   font-family: arponasans, sans-serif;
   font-weight: 400;
-  color: #c4c3c3;
+  color: #767676;
 }
 
 h4 {
   font-family: arponasans, sans-serif;
   font-weight: 400;
-  color: #d17777;
+  color: rgba(192, 123, 123, 0.946);
 }
 
 p {
@@ -20,13 +20,13 @@ html {
 }
 
 body {
-  background-color: #272727;
+  background-color: #dcd7d7;
   text-decoration: none;
   overflow-x: hidden;
 }
 
 a {
-  color: #ffeada;
+  color: rgba(192, 123, 123, 0.946);
   text-decoration: none;
 }
 a:hover {
@@ -40,11 +40,11 @@ button {
 }
 
 nav {
-  background-color: #222222;
+  background-color: #e5e5e5;
   width: 100vw;
   padding: 1rem;
   z-index: 1;
-  filter: drop-shadow(5px 0px 20px #222222);
+  /*filter: drop-shadow(5px 0px 20px $primary-color);*/
 }
 nav:hover {
   z-index: 1;
@@ -53,10 +53,11 @@ nav:hover {
 hr {
   width: 120%;
   transform: translateX(-10%);
+  color: #dcd7d7;
 }
 
 footer {
-  background-color: #272727;
+  background-color: #dcd7d7;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -68,7 +69,7 @@ footer {
 }
 
 .background {
-  background-color: #272727;
+  background-color: #dcd7d7;
 }
 
 .center {
@@ -84,19 +85,23 @@ footer {
 }
 
 .primarycolor {
-  background-color: #222222;
+  background-color: #e5e5e5;
 }
 
 .secondarycolor {
-  color: #c4c3c3;
+  color: #767676;
 }
 
 .films {
   justify-content: center;
 }
 
+.headertext {
+  color: #dcd7d7;
+}
+
 .icons {
-  color: #c4c3c3;
+  color: #767676;
   text-align: center;
   margin: auto;
   justify-content: center;
@@ -166,7 +171,7 @@ html {
 }
 
 #circularcursor {
-  background-color: #d17777;
+  background-color: rgba(192, 123, 123, 0.946);
   mix-blend-mode: exclusion;
   height: 10px;
   width: 10px;
@@ -206,7 +211,7 @@ html {
   top: 2px;
   border-radius: 100%;
   background: transparent;
-  border: 4px solid #c4c3c3;
+  border: 4px solid #767676;
   left: -15px;
 }
 .btn14 .icon-circle:hover {
@@ -218,7 +223,7 @@ html {
   height: 2px;
   width: 30px;
   top: 30px;
-  background-color: #c4c3c3;
+  background-color: #767676;
   border-radius: 2px;
 }
 .btn14 .icon:before {
@@ -226,7 +231,7 @@ html {
   position: absolute;
   width: 30px;
   height: 2px;
-  background-color: #c4c3c3;
+  background-color: #767676;
   content: "";
   top: -10px;
   border-radius: 2px;
@@ -236,7 +241,7 @@ html {
   position: absolute;
   width: 30px;
   height: 2px;
-  background-color: #c4c3c3;
+  background-color: #767676;
   content: "";
   top: 10px;
   border-radius: 2px;
@@ -309,7 +314,7 @@ html {
 
   .dropdown-content {
     transform: translate(-20%, 1%);
-    background-color: #272727;
+    background-color: #dcd7d7;
     border-radius: 5%;
   }
 }
